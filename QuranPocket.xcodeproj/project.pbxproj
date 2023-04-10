@@ -14,6 +14,8 @@
 		4062152129D3DB2F00E31BB7 /* QuranPocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062152029D3DB2F00E31BB7 /* QuranPocketTests.swift */; };
 		4062152B29D3DB2F00E31BB7 /* QuranPocketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062152A29D3DB2F00E31BB7 /* QuranPocketUITests.swift */; };
 		4062152D29D3DB2F00E31BB7 /* QuranPocketUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062152C29D3DB2F00E31BB7 /* QuranPocketUITestsLaunchTests.swift */; };
+		B6D8CCC929E4807300EB12BA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D8CCC829E4807300EB12BA /* APIService.swift */; };
+		B6D8CCCB29E481B200EB12BA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D8CCCA29E481B200EB12BA /* Route.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		4062152629D3DB2F00E31BB7 /* QuranPocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuranPocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4062152A29D3DB2F00E31BB7 /* QuranPocketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranPocketUITests.swift; sourceTree = "<group>"; };
 		4062152C29D3DB2F00E31BB7 /* QuranPocketUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranPocketUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B6D8CCC829E4807300EB12BA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		B6D8CCCA29E481B200EB12BA /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,9 @@
 		4062150E29D3DB2E00E31BB7 /* QuranPocket */ = {
 			isa = PBXGroup;
 			children = (
+				B6D8CCC529E47B2500EB12BA /* Domain */,
+				B6D8CCC429E47B2000EB12BA /* Data */,
+				B6D8CCC329E47B1400EB12BA /* Network */,
 				4062150F29D3DB2E00E31BB7 /* QuranPocketApp.swift */,
 				4062151129D3DB2E00E31BB7 /* ContentView.swift */,
 				4062151329D3DB2F00E31BB7 /* Assets.xcassets */,
@@ -125,6 +132,45 @@
 				4062152C29D3DB2F00E31BB7 /* QuranPocketUITestsLaunchTests.swift */,
 			);
 			path = QuranPocketUITests;
+			sourceTree = "<group>";
+		};
+		B6D8CCC329E47B1400EB12BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B6D8CCC829E4807300EB12BA /* APIService.swift */,
+				B6D8CCCA29E481B200EB12BA /* Route.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B6D8CCC429E47B2000EB12BA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B6D8CCC729E47B3400EB12BA /* Local */,
+				B6D8CCC629E47B2F00EB12BA /* Remote */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B6D8CCC529E47B2500EB12BA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B6D8CCC629E47B2F00EB12BA /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		B6D8CCC729E47B3400EB12BA /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4062151229D3DB2E00E31BB7 /* ContentView.swift in Sources */,
+				B6D8CCCB29E481B200EB12BA /* Route.swift in Sources */,
+				B6D8CCC929E4807300EB12BA /* APIService.swift in Sources */,
 				4062151029D3DB2E00E31BB7 /* QuranPocketApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
